@@ -1,0 +1,7 @@
+pip==21.1.2
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.9.0
+PyQt5-stubs==5.15.2.0
+PyQt5==5.15.6
+setuptools==57.0.0
+wheel==0.36.2
