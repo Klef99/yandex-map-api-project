@@ -2,13 +2,19 @@ import sys
 
 from PyQt5 import uic  # Импортируем uic
 from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtGui import QPixmap
+import PyQt5.QtWidgets as QWidgets
 
 
 class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('main.ui', self)  # Загружаем дизайн
-        #.pushButton.clicked.connect(self.run)
+        pix = QPixmap('test.png')
+        item = QWidgets.QGraphicsPixmapItem(pix)
+        scene = QWidgets.QGraphicsScene(self)
+        scene.addItem(item)
+        self.mapView.setScene(scene)
         # Обратите внимание: имя элемента такое же как в QTDesigner
 
     def run(self):

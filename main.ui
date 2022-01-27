@@ -14,7 +14,7 @@
    <string>Карта</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGraphicsView" name="graphicsView">
+   <widget class="QGraphicsView" name="mapView">
     <property name="geometry">
      <rect>
       <x>15</x>
